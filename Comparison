@@ -1,0 +1,13 @@
+class Main {
+    public static void main(String[] args) {
+        int a = 50;
+        int b = 55;
+        int c = 46;
+        if (a > b && a > c)
+    System.out.println("The highest number is "+ a);
+else if (b > c)
+    System.out.println("The highest number is "+ b);
+else
+    System.out.println("The highest number is "+ c);
+    }
+}
