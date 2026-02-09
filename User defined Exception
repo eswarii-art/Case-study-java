@@ -1,0 +1,16 @@
+class InvalidInputException extends Exception {
+    public InvalidInputException(String msg) {
+        super(msg);
+    }
+}
+class CustomExceptionDemo {
+    public static void main(String[] args) {
+        try {
+            int age = -5;
+            if (age < 0)
+                throw new InvalidInputException("Invalid age");
+        } catch (InvalidInputException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
