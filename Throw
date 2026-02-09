@@ -1,0 +1,7 @@
+class ThrowDemo {
+    public static void main(String[] args) {
+        int marks = 120;
+        if (marks > 100)
+            throw new ArithmeticException("Marks cannot be more than 100");
+    }
+}
