@@ -1,0 +1,16 @@
+class JoinDemo extends Thread {
+    public void run() {
+        System.out.println("Task 1 completed");
+    }
+    public static void main(String[] args) {
+        JoinDemo t1 = new JoinDemo();
+        JoinDemo t2 = new JoinDemo();
+        try {
+            t1.start();
+            t1.join();   // wait for t1 to finish
+            t2.start();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+}
