@@ -1,0 +1,12 @@
+class RemoveSpaces {
+    public static void main(String[] args) {
+        String text = "Java is very easy";
+        String result = "";
+        for (int i = 0; i < text.length(); i++) {
+            if (text.charAt(i) != ' ') {
+                result = result + text.charAt(i);
+            }
+        }
+        System.out.println("String without spaces: " + result);
+    }
+}
